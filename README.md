@@ -5,7 +5,7 @@ PowerShell Script to set New MicroSoft Teams Presence
 
 ## ⚡ Usage
 
-From terminal enter .\MSTeamsPresence.ps1 <status>
+From terminal enter .\MSTeamsPresence.ps1 _status_
 
 Available status options:
 
