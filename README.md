@@ -24,3 +24,8 @@ pwsh.exe -noprofile -windowstyle Hidden -executionpolicy bypass -noninteractive 
 or
 
 powershell.exe -noprofile -windowstyle Hidden -executionpolicy bypass -noninteractive "MSTeamsPresence.ps1" available
+
+
+## 📒 Notes
+
+This has only been tested with the New Teams client as MS is phasing out the classic client.  This will find the link via registry so no worries about New Teams client updates.
