@@ -16,5 +16,5 @@ else {
     $FullPresence = "--set-presence-to-$Presence"
 }
 Write-Host $FullPresence
-$mspath = Get-ItemPropertyValue -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\App Paths\ms-teams.exe" -Name "(Default)"
-Start-Process -FilePath $mspath -ArgumentList $FullPresence
+$mspath = $ENV:USERPROFILE + '\AppData\Local\Microsoft\WindowsApps'
+Start-Process -FilePath "ms-teams.exe" -WorkingDirectory $mspath -ArgumentList $FullPresence
